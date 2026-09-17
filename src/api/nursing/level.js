@@ -42,3 +42,23 @@ export function delLevel(id) {
     method: 'delete'
   })
 }
+
+// 查询所有护理计划
+export function getAllPlans() {
+  return request({
+    url: '/nursing/plan/all',
+    method: 'get'
+  })
+}
+
+// 查询所有护理等级
+export function listAllLevel() {
+  return request({
+    url: '/nursing/level/listAll',
+    method: 'get'
+  })
+}
+
+export const getAllLevels = listAllLevel
+
+
